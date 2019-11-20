@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 
 export default class PortfolioItemItem extends Component {
-
-  smallImg() {
+  render() {
     return (
       <div className='small-img'>
         {this.props.Objs.map( (obj, index )=> {
@@ -21,14 +20,6 @@ export default class PortfolioItemItem extends Component {
           }
           return <div className='small-img-item' key={obj.img} style={style} onClick={ () => this.props.onImgClick(index)}></div>;
         })}
-      </div>
-    );
-  }
-
-  render() {
-    return (
-      <div>
-        {this.smallImg()}
       </div>
     );
   }

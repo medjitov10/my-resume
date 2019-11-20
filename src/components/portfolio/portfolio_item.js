@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PortfolioItemItem from './portfolio_item_item';
 import $ from 'jquery';
 
 export default class PortfolioItem extends Component {
@@ -80,8 +79,6 @@ export default class PortfolioItem extends Component {
             <i className="fa fa-times fa-lg"></i>
           </div>
         </div>
-
-        <PortfolioItemItem Objs={Objs} currentObj={currentObj} onImgClick={onIconClick} />
       </div>
     );
   }
