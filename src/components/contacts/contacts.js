@@ -28,7 +28,7 @@ export default class Contacts extends Component {
     return (
       <div style={{width: '100%', height: '500px'}}>
         <div className="contacts-intro">
-          <h3>Contacts</h3>
+          <h3>Contact</h3>
           <p>Send me e-mail any time you want.</p>
         </div>
         <div className="contacts-body row no-margin">
