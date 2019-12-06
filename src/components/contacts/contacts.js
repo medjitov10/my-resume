@@ -1,29 +1,29 @@
 import React, { Component } from 'react';
-import GoogleMap from './google_map';
-import Form from './form';
+// import GoogleMap from './google_map';
+// import Form from './form';
 import axios from 'axios';
 import $ from 'jquery';
 export default class Contacts extends Component {
-  constructor() {
-    super();
-    this.state = { messageSended: false };
-  }
-  onFormSubmit(props) {
-    axios.post('https://formspree.io/medjitov10@gmail.com', props)
-      .then( data => {
-        if ( data.status === 200 ) {
-          this.setState({ messageSended: true });
-          $("#form").fadeOut('fast', () => { $(".form-success").fadeIn('fast'); });
-        }
-      });
-  }
+  // constructor() {
+  //   super();
+  //   this.state = { messageSended: false };
+  // }
+  // onFormSubmit(props) {
+  //   axios.post('https://formspree.io/medjitov10@gmail.com', props)
+  //     .then( data => {
+  //       if ( data.status === 200 ) {
+  //         this.setState({ messageSended: true });
+  //         $("#form").fadeOut('fast', () => { $(".form-success").fadeIn('fast'); });
+  //       }
+  //     });
+  // }
 
 
   render() {
-    const myLocation = {
-      lat: 40.726760,
-      lng: -73.862087
-    };
+    // const myLocation = {
+    //   lat: 40.726760,
+    //   lng: -73.862087
+    // };
 
     return (
       <div style={{width: '100%', height: '500px'}}>
@@ -32,7 +32,8 @@ export default class Contacts extends Component {
           <p>Send me e-mail any time you want.</p>
         </div>
         <div className="contacts-body row no-margin">
-          <div className="col-lg-6 col-12  no-margin form">
+          medjitov10@gmail
+          {/* <div className="col-lg-6 col-12  no-margin form">
             <div id='form'>
               <Form onFormSubmit={this.onFormSubmit.bind(this)}/>
             </div>
@@ -54,7 +55,7 @@ export default class Contacts extends Component {
               <GoogleMap />
             </div>
 
-          </div>
+          </div> */}
 
         </div>
 

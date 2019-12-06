@@ -18,12 +18,14 @@ class CurrentItem extends Component {
         return <Portfolio />;
       case 'Education':
         return <Education />;
-      case 'Contacts':
-        return <Contacts />;
+      // case 'Contacts':
+      //   return <Contacts />;
     }
   }
 
   render() {
+    console.log(this.props.item);
+    
     return (
       <div style={{ marginBottom: '25px'}}>
         {this.current()}

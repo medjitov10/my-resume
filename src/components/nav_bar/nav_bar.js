@@ -14,7 +14,7 @@ class NabBar extends Component {
   render() {
 
 
-    const items = ['AboutMe', 'Education', 'Portfolio', 'Skills', 'Contact'];
+    const items = ['AboutMe', 'Education', 'Portfolio', 'Skills'];
     const icon = ['fa-user-o', 'fa-book', 'fa-briefcase', 'fa-hand-rock-o', 'fa-envelope-o'];
     const color = ['lightyellow','  #daffe6', '#b0feb0', '#7cd6f2', '#eed9b8'];
     return (
