@@ -23,7 +23,7 @@ export default class SkillsIntro extends Component {
       <div className='skills-intro-div'>
         <h3 className={this.state.animate}>Professional skills</h3>
         <p className={this.state.conclusion}>
-          There is my evaluation opinion about my skills in percent
+          There is list of some of my skills.
         </p>
       </div>
     );
