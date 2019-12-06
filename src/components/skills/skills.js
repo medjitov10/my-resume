@@ -9,6 +9,46 @@ class Skills extends Component {
     this.state = { percent: 5};
   }
 
+  skills_list = [
+  {
+    name: 'Java',
+    img: './../../../img/java.png'
+  },
+  {
+    name: 'Spring',
+    img: './../../../img/spring.png'
+  },
+  {
+    name: "React",
+    img: "./../../../img/react.png",
+  },
+  {
+    name: "Java Script",
+    img: './../../../img/js-logo.png'
+  },
+  {
+    img: "./../../../img/ruby-on-rails.png",
+    name: 'RUBY ON RAILS'
+  },
+  {
+    img: "./../../../img/postgresql.png",
+    name: "PostgreSQL"
+  },
+  {
+    img: "./../../../img/git.png",
+    name: "Git"
+  }
+  ,
+  {
+    img: "./../../../img/docker.png",
+    name: "Docker"
+  },
+  {
+    img: "./../../../img/postman.png",
+    name: "Postman"
+  }
+  ]
+
   render() {
     return (
       <div className='skills'>
@@ -20,36 +60,20 @@ class Skills extends Component {
           <div className="container-fluid">
             <div className="row">
               <div className="row col-lg-12 col-md-12 col-12 skills-div no-margin">
-
-              <div className='col-lg-3 col-md-6 col-sm-12'>
-                <SkillsItem
-                  name='React'
-                  img='./../../../img/react.png'
-                  color='rgb(68, 183, 255)'
-                />
-              </div>
-              <div className='col-lg-3 col-md-6 col-sm-12'>
-                <SkillsItem
-                  name='Java'
-                  img='./../../../img/java.png'
-                  color='rgb(68, 183, 255)'
-                />
-              </div>
-              <div className='col-lg-3 col-md-6 col-sm-12'>
-                <SkillsItem
-                  name='JS'
-                  img='./../../../img/js-logo.png'
-                  color='rgb(68, 183, 255)'
-                />
-              </div>
-
-              <div className='col-lg-3 col-md-6 col-sm-12'>
-                <SkillsItem
-                  img="./../../../img/ruby-on-rails.png"
-                  name='RUBY ON RAILS'
-                  color='rgb(153, 24, 30)'
-                />
-              </div>
+                {
+                  this.skills_list.map(skill => {
+                    return (
+                      <div className='col-lg-3 col-md-6 col-sm-12'>
+                        <SkillsItem
+                          name={skill.name}
+                          img={skill.img}
+                          color='rgb(68, 183, 255)'
+                        />
+                      </div>  
+                    )
+                  })
+                }
+                
               </div>
             </div>
           </div>

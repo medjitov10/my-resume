@@ -16,7 +16,7 @@ export default class AboutDescription extends Component {
     I bring a strong understanding of well structured MVC architecture
     and design patterns to the team I work with. I have the ability to
     think about abstract problems and process them into small solutions
-    so that I could find an efficient way to accomplish any project.
+    so that I can find an efficient way to accomplish any project.
     My belief system is grounded in maintainability, scalability,
     and the idea that resources should be used only when needed,
     be that in the world of code and beyond. `.split('');
