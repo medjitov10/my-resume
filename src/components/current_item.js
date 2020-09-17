@@ -27,7 +27,7 @@ class CurrentItem extends Component {
     console.log(this.props.item);
     
     return (
-      <div style={{ marginBottom: '25px'}}>
+      <div style={{ marginBottom: '25px', height: window.innerHeight * 0.7}}>
         {this.current()}
       </div>
     );

@@ -75,7 +75,7 @@ class Portfolio extends Component {
         <div>
           <h3 className='portfolio-intro'>My main works for the moment</h3>
         </div>
-        <div style={{ height: '100%'}}>
+        <div style={{ height: '75%'}}>
           <PortfolioItemItem Objs={this.state.obj} currentObj={currentObj} onImgClick={this.onIconClick.bind(this)} />
           <div style={{display: 'flex', height: '100%', margin: '10px'}}>
             <PortfolioItem
